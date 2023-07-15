@@ -10,11 +10,11 @@ export function TravelTypesSection() {
       mt="7.1rem"
       px="8.75rem"
     >
-      <TravelTypeItem imgUrl="/cocktail.png" text="vida noturna" />
-      <TravelTypeItem imgUrl="/surf.png" text="praia" />
-      <TravelTypeItem imgUrl="/building.png" text="moderno" />
-      <TravelTypeItem imgUrl="/museum.png" text="clássico" />
-      <TravelTypeItem imgUrl="/earth.png" text="e mais..." />
+      <TravelTypeItem imageUrl="/cocktail.png" text="vida noturna" />
+      <TravelTypeItem imageUrl="/surf.png" text="praia" />
+      <TravelTypeItem imageUrl="/building.png" text="moderno" />
+      <TravelTypeItem imageUrl="/museum.png" text="clássico" />
+      <TravelTypeItem imageUrl="/earth.png" text="e mais..." />
     </HStack>
   );
 }

@@ -2,10 +2,10 @@ import { Box, Image, Text } from "@chakra-ui/react";
 
 interface TravelTypeItemProps {
   text: string;
-  imgUrl: string;
+  imageUrl: string;
 }
 
-export function TravelTypeItem({ imgUrl, text }: TravelTypeItemProps) {
+export function TravelTypeItem({ imageUrl, text }: TravelTypeItemProps) {
   return (
     <Box
       display="flex"
@@ -16,7 +16,7 @@ export function TravelTypeItem({ imgUrl, text }: TravelTypeItemProps) {
       h="9rem"
     >
       <Box p="2">
-        <Image alt={`icone de ${text}`} src={imgUrl} />
+        <Image alt={`icone de ${text}`} src={imageUrl} />
       </Box>
       <Text fontWeight="semibold" fontSize="1.rem">
         {text}
