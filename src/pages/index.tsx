@@ -1,6 +1,7 @@
 import { Divider, Flex, Text } from "@chakra-ui/react";
 import Head from "next/head";
 
+import { Banner } from "@/components/Banner";
 import { ContinentsSlides } from "@/components/ContinentsSlides";
 import { Header } from "@/components/Header";
 import { TravelTypesSection } from "@/components/TravelTypesSection";
@@ -18,7 +19,7 @@ export default function Home() {
       <Flex w="100%" flexDir="column" alignItems="center">
         <Header />
 
-        <image />
+        <Banner />
 
         <TravelTypesSection />
 

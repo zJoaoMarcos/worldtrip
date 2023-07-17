@@ -8,12 +8,12 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 
-export function image() {
+export function Banner() {
   const showAirplane = useBreakpointValue({ base: false, md: true });
 
   return (
     <Box
-      backgroundImage="url('/background-image.png')"
+      backgroundImage="url('/background-banner.png')"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       bgSize="cover"
