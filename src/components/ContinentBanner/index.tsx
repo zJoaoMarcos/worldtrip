@@ -18,7 +18,7 @@ export function ContinentBanner({ bannerUrl, name }: ContinentBannerProps) {
       justifyContent="center"
       pb="3.75rem"
     >
-      <Box w="100%" maxW="1440px">
+      <Box w="100%" maxW="1440px" px="8.75rem">
         <Heading color="gray.50" fontWeight="semibold">
           {name}
         </Heading>

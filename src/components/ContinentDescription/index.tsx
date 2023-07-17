@@ -14,6 +14,7 @@ export function ContinentDescription({
       justifyContent="space-between"
       gap="20"
       w="100%"
+      px="8.75rem"
       maxW="1440px"
       my="5rem"
     >

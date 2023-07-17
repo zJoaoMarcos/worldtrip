@@ -5,10 +5,11 @@ export function TravelTypesSection() {
   return (
     <HStack
       w="100%"
-      align="center"
-      justifyContent="space-evenly"
-      mt="7.1rem"
+      maxW="1440px"
       px="8.75rem"
+      align="center"
+      justifyContent="space-between"
+      mt="7.1rem"
     >
       <TravelTypeItem imageUrl="/cocktail.png" text="vida noturna" />
       <TravelTypeItem imageUrl="/surf.png" text="praia" />

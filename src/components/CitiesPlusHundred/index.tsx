@@ -13,7 +13,7 @@ interface CitiesPlusHundredProps {
 
 export function CitiesPlusHundred({ cities }: CitiesPlusHundredProps) {
   return (
-    <Flex w="100%" maxW="1440px" mb="20" flexDir="column">
+    <Flex w="100%" maxW="1440px" px="8.75rem" mb="20" flexDir="column">
       <Heading as="h4" color="gray.700" fontWeight="normal">
         Cidades +100
       </Heading>

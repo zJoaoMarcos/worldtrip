@@ -12,24 +12,27 @@ export function Banner() {
   const showAirplane = useBreakpointValue({ base: false, md: true });
 
   return (
-    <Box
+    <Flex
       backgroundImage="url('/background-banner.png')"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       bgSize="cover"
       w="100%"
       h="20.9rem"
+      justifyContent="center"
     >
       <Flex
-        w="full"
+        w="100%"
+        maxW="1440px"
         h="full"
-        py="5rem"
         px="8.75rem"
-        align="center"
-        justify="space-around"
+        py="5rem"
+        alignItems="center"
+        justify="space-between"
       >
-        <VStack flexDir="column" align="start" w="32.75rem" spacing="5">
+        <VStack flexDir="column" align="start" maxW="32.75rem" spacing="5">
           <Heading
+            as="h2"
             color="gray.50"
             fontSize="36px"
             fontWeight="semibold"
@@ -59,6 +62,6 @@ export function Banner() {
           </Box>
         )}
       </Flex>
-    </Box>
+    </Flex>
   );
 }

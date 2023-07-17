@@ -8,7 +8,14 @@ export function Header() {
   const isHomePage = asPath !== "/";
 
   return (
-    <Flex w="100%" maxW="1440px" py="7" flexDir="row" alignItems="center">
+    <Flex
+      w="100%"
+      maxW="1440px"
+      px="8.75rem"
+      py="7"
+      flexDir="row"
+      alignItems="center"
+    >
       {isHomePage && (
         <IconButton
           aria-label="back-home"
