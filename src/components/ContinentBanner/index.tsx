@@ -1,4 +1,4 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 
 interface ContinentBannerProps {
   bannerUrl: string;
@@ -13,16 +13,22 @@ export function ContinentBanner({ bannerUrl, name }: ContinentBannerProps) {
       backgroundRepeat="no-repeat"
       bgSize="cover"
       w="100%"
-      h="31.25rem"
-      alignItems="flex-end"
+      h={{ base: "9.375rem", md: "31.25rem" }}
+      alignItems="end"
       justifyContent="center"
-      pb="3.75rem"
     >
-      <Box w="100%" maxW="1440px" px="8.75rem">
-        <Heading color="gray.50" fontWeight="semibold">
+      <Flex
+        w="100%"
+        maxWidth="1440px"
+        alignItems={{ base: "center", md: "end" }}
+        justifyContent={{ base: "center", md: "flex-start" }}
+        pb="3.75rem"
+        pl={{ base: 0, md: "8.75rem" }}
+      >
+        <Heading maxW="1440px" color="gray.50" fontWeight="semibold">
           {name}
         </Heading>
-      </Box>
+      </Flex>
     </Flex>
   );
 }

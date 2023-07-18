@@ -13,17 +13,24 @@ interface CitiesPlusHundredProps {
 
 export function CitiesPlusHundred({ cities }: CitiesPlusHundredProps) {
   return (
-    <Flex w="100%" maxW="1440px" px="8.75rem" mb="20" flexDir="column">
+    <Flex
+      w="100%"
+      maxW="1440px"
+      px={{ base: "1rem", md: "8.75rem" }}
+      mb="20"
+      flexDir="column"
+      alignItems="start"
+    >
       <Heading as="h4" color="gray.700" fontWeight="normal">
         Cidades +100
       </Heading>
 
       <SimpleGrid
         w="full"
-        columns={4}
-        spacingY="3rem"
-        spacingX="2.8125rem"
-        mt="2.5rem"
+        columns={{ base: 1, sm: 2, lg: 4 }}
+        spacingY={{ base: "1.25rem", md: "3rem" }}
+        spacingX={{ base: 0, md: "2.8125rem" }}
+        mt={{ base: "1.25rem", md: "2.5rem" }}
       >
         {cities.map((city) => (
           <CityCard key={city.id} city={city} />
