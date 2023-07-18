@@ -19,17 +19,18 @@ export function CitiesPlusHundred({ cities }: CitiesPlusHundredProps) {
       px={{ base: "1rem", md: "8.75rem" }}
       mb="20"
       flexDir="column"
-      alignItems="start"
+      alignItems="flex-start"
     >
-      <Heading as="h4" color="gray.700" fontWeight="normal">
+      <Heading as="h4" textAlign="start" color="gray.700" fontWeight="normal">
         Cidades +100
       </Heading>
 
       <SimpleGrid
-        w="full"
+        w="100%"
         columns={{ base: 1, sm: 2, lg: 4 }}
+        px={{ base: "3.75rem", sm: "0" }}
         spacingY={{ base: "1.25rem", md: "3rem" }}
-        spacingX={{ base: 0, md: "2.8125rem" }}
+        spacingX={{ base: "0", md: "2.8125rem" }}
         mt={{ base: "1.25rem", md: "2.5rem" }}
       >
         {cities.map((city) => (

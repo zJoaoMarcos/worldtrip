@@ -1,8 +1,8 @@
 .swiper-button-next {
-  right: 45px !important;
+  right: 2.8125rem !important;
 }
 .swiper-button-prev {
-  left: 45px !important;
+  left: 2.8125rem !important;
 }
 .swiper-button-prev:after,
 .swiper-button-next:after {
@@ -10,8 +10,8 @@
 }
 
 .swiper-pagination-bullet {
-  width: 16px !important;
-  height: 16px !important;
+  width: 1rem !important;
+  height: 1rem !important;
   background: #999999 !important;
   opacity: 1 !important;
 }
@@ -22,10 +22,10 @@
 
 @media (max-width: 30em) {
   .swiper-button-next {
-    right: 15px !important;
+    right: 1rem !important;
   }
   .swiper-button-prev {
-    left: 15 !important;
+    left: 1rem !important;
   }
 
   .swiper-button-next:after,
@@ -34,7 +34,7 @@
   }
 
   .swiper-pagination-bullet {
-    width: 8px !important;
-    height: 8px !important;
+    width: 0.5rem !important;
+    height: 0.5rem !important;
   }
 }

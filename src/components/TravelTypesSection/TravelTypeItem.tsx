@@ -1,4 +1,4 @@
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 
 interface TravelTypeItemProps {
   text: string;
@@ -6,17 +6,23 @@ interface TravelTypeItemProps {
 }
 
 export function TravelTypeItem({ imageUrl, text }: TravelTypeItemProps) {
+  const isWideVersion = useBreakpointValue({ base: false, md: true });
+
   return (
     <Box
       display="flex"
       alignItems="center"
       justifyContent="space-between"
-      flexDir="column"
-      w="9.87rem"
-      h="9rem"
+      flexDir={{ base: "row", md: "column" }}
+      w={{ base: "max-content", md: "9.87rem" }}
+      h={{ base: 0, md: "9rem" }}
     >
       <Box p="2">
-        <Image alt={`icone de ${text}`} src={imageUrl} />
+        {isWideVersion ? (
+          <Image alt={`icone de ${text}`} src={imageUrl} />
+        ) : (
+          <Box boxSize="0.5rem" bgColor="yellow.500" />
+        )}
       </Box>
       <Text fontWeight="semibold" fontSize="1.rem">
         {text}

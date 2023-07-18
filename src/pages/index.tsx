@@ -23,13 +23,18 @@ export default function Home() {
 
         <TravelTypesSection />
 
-        <Divider bg="gray.900" mt="5rem" w="5.625rem" h="0.125rem" />
+        <Divider
+          bg="gray.900"
+          mt={{ base: "2.25rem", md: "5rem" }}
+          w="5.625rem"
+          h="0.125rem"
+        />
 
         <Text
-          w="52.4375rem"
-          my="3.25rem"
+          flexWrap="wrap"
+          my={{ base: "1.25rem", md: "3.25rem" }}
           color="gray.700"
-          fontSize="3xl"
+          fontSize={{ base: "1.25rem", md: "3xl" }}
           fontWeight="normal"
           textAlign="center"
         >

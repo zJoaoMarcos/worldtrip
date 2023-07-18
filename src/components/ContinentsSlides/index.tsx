@@ -10,11 +10,11 @@ export function ContinentsSlides() {
     <Flex
       w="100%"
       maxW="1440px"
-      px="8.75rem"
+      px={{ base: "0", md: "8.75rem" }}
       mx="auto"
-      h="28.125rem"
-      my="5"
-      mb="10"
+      h={{ base: "15.625rem", md: "28.125rem" }}
+      my={{ base: "5px", md: "5" }}
+      mb={{ base: "1.5rem", md: "2.5rem" }}
     >
       <Slider>
         {continents.map((continent) => {

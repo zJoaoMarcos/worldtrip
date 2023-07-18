@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 
 export function Banner() {
-  const showAirplane = useBreakpointValue({ base: false, md: true });
+  const showAirplane = useBreakpointValue({ base: false, lg: true });
 
   return (
     <Flex
@@ -18,23 +18,27 @@ export function Banner() {
       backgroundRepeat="no-repeat"
       bgSize="cover"
       w="100%"
-      h="20.9rem"
+      h={{ base: "10rem", md: "20.9rem" }}
       justifyContent="center"
     >
       <Flex
         w="100%"
         maxW="1440px"
-        h="full"
-        px="8.75rem"
-        py="5rem"
+        px={{ base: "1rem", md: "8.75rem" }}
+        py={{ base: "1.75rem", md: "5rem" }}
         alignItems="center"
         justify="space-between"
       >
-        <VStack flexDir="column" align="start" maxW="32.75rem" spacing="5">
+        <VStack
+          flexDir="column"
+          align="start"
+          maxW="32.75rem"
+          spacing={{ basw: "8px", md: "5" }}
+        >
           <Heading
             as="h2"
             color="gray.50"
-            fontSize="36px"
+            fontSize={{ base: "1.25rem", md: "2.25rem" }}
             fontWeight="semibold"
             w="22.rem"
             lineHeight="normal"
@@ -44,7 +48,7 @@ export function Banner() {
 
           <Text
             color="gray.100"
-            fontSize="20px"
+            fontSize={{ base: "0.875rem", md: "1.25rem" }}
             fontWeight="normal"
             w={{ base: "10.rem", sm: "18.rem" }}
           >

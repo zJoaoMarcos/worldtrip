@@ -9,25 +9,27 @@ export function ContinentDescription({
 }: ContinentDescriptionProps) {
   return (
     <Flex
-      flexDir={{ base: "column", md: "row" }}
+      flexDir={{ base: "column", lg: "row" }}
       alignItems="center"
       justifyContent="space-between"
-      gap={{ base: "1rem", md: "20" }}
+      gap={{ base: "1rem", lg: "20" }}
       w="100%"
       px={{ base: "1rem", md: "8.75rem" }}
       maxW="1440px"
       my={{ base: "1.5rem", md: "5rem" }}
     >
-      <Box maxW="37.5rem">
+      <Box w="full" maxW="37.5rem">
         <Text textAlign="justify" fontSize="0.875rem">
           {description}
         </Text>
       </Box>
 
       <HStack
-        w={{ base: "full", md: "30.625rem" }}
+        w="full"
+        alignItems="center"
+        justifyContent="center"
         spacing="2.625rem"
-        mr={{ base: "0", md: "10" }}
+        mr={{ base: "0", lg: "10" }}
       >
         <Highlight amount={50} data="países" />
         <Highlight amount={60} data="linguas" />
