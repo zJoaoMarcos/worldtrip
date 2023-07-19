@@ -1,0 +1,250 @@
+{
+  "continents": [
+    {
+      "id": "america-do-norte",
+      "name": "América do Norte",
+      "slide": "/continents-slides/america-do-norte.png",
+      "altSlide": "imagem do continente Norte Americano",
+      "description": "Metrópoles modernas, vastas paisagens naturais e cultura diversificada",
+      "bannerUrl": "/continents/america-do-norte/banner.png",
+      "paragraph": "A América do Norte é um continente de contrastes impressionantes, que vai desde as vastas planícies centrais até as icônicas Montanhas Rochosas e a Cordilheira do Alasca. É também o lar de metrópoles cosmopolitas, como Nova York e Los Angeles, onde a modernidade e a diversidade cultural se destacam. Com uma mistura única de paisagens e experiências urbanas, a América do Norte oferece algo para todos os tipos de viajantes.",
+      "countries": 3,
+      "languages": 2,
+      "cities": [
+        {
+          "id": 1,
+          "imageUrl": "/continents/america-do-norte/cities/nova-york.png",
+          "name": "Nova York",
+          "country": "Estados Unidos",
+          "flag": "/continents/america-do-norte/flags/usa.png"
+        },
+        {
+          "id": 2,
+          "imageUrl": "/continents/america-do-norte/cities/los-angeles.png",
+          "name": "Los Angeles",
+          "country": "Estados Unidos",
+          "flag": "/continents/america-do-norte/flags/usa.png"
+        },
+        {
+          "id": 3,
+          "imageUrl": "/continents/america-do-norte/cities/toronto.png",
+          "name": "Toronto",
+          "country": "Canadá",
+          "flag": "/continents/america-do-norte/flags/canada.png"
+        }
+      ]
+    },
+    {
+      "id": "america-do-sul",
+      "name": "América do Sul",
+      "slide": "/continents-slides/america-do-sul.png",
+      "altSlide": "imagem do continente Sul Americano",
+      "bannerUrl": "/continents/america-do-sul/banner.png",
+      "description": "Selvas exuberantes, montanhas imponentes e mistura de culturas vibrantes",
+      "paragraph": "A América do Sul é um continente de beleza deslumbrante, com uma vasta diversidade de paisagens naturais que vão desde a exuberante Floresta Amazônica até as majestosas montanhas dos Andes. Além disso, oferece uma rica tapeçaria cultural, com cidades vibrantes como Rio de Janeiro, Buenos Aires e Lima, onde se pode mergulhar na arte, história e gastronomia latino-americanas.",
+      "countries": 12,
+      "languages": 5,
+      "cities": [
+        {
+          "id": 1,
+          "imageUrl": "/continents/america-do-sul/cities/rio-de-janeiro.png",
+          "name": "Rio de Janeiro",
+          "country": "Brasil",
+          "flag": "/continents/america-do-sul/flags/brasil.png"
+        },
+        {
+          "id": 2,
+          "imageUrl": "/continents/america-do-sul/cities/buenos-aires.png",
+          "name": "Bueno Aires",
+          "country": "Argentina",
+          "flag": "/continents/america-do-sul/flags/argentina.png"
+        },
+        {
+          "id": 3,
+          "imageUrl": "/continents/america-do-sul/cities/lima.png",
+          "name": "Lima",
+          "country": "Peru",
+          "flag": "/continents/america-do-sul/flags/peru.png"
+        }
+      ]
+    },
+    {
+      "id": "asia",
+      "name": "Ásia",
+      "slide": "/continents-slides/asia.png",
+      "altSlide": "imagem do continente Asiatico",
+      "bannerUrl": "/continents/asia/banner.png",
+      "description": "Tradições antigas se encontram com cidades modernas.",
+      "paragraph": "A Ásia é um continente vasto e diverso, com uma rica mistura de paisagens deslumbrantes, desde as altas montanhas do Himalaia até as praias paradisíacas do Sudeste Asiático. Explore cidades vibrantes como Tóquio, Hong Kong e Bangkok, descubra a rica história e a cultura milenar, e desfrute da incrível variedade gastronômica. A Ásia oferece uma experiência única e inesquecível para os turistas.",
+      "countries": 49,
+      "languages": 46,
+      "cities": [
+        {
+          "id": 1,
+          "imageUrl": "/continents/asia/cities/bangkok.png",
+          "name": "Bangkok",
+          "country": "Tailândia",
+          "flag": "/continents/asia/flags/tailandia.png"
+        },
+        {
+          "id": 2,
+          "imageUrl": "/continents/asia/cities/toquio.png",
+          "name": "Tóquio",
+          "country": "Japão",
+          "flag": "/continents/asia/flags/japao.png"
+        },
+        {
+          "id": 3,
+          "imageUrl": "/continents/asia/cities/istambul.png",
+          "name": "Istambul",
+          "country": "Turquia",
+          "flag": "/continents/asia/flags/turquia.png"
+        },
+        {
+          "id": 4,
+          "imageUrl": "/continents/asia/cities/seul.png",
+          "name": "Seul",
+          "country": "Coreia do Sul",
+          "flag": "/continents/asia/flags/coreia-do-sul.png"
+        },
+        {
+          "id": 5,
+          "imageUrl": "/continents/asia/cities/mumbai.png",
+          "name": "Mumbai",
+          "country": "India",
+          "flag": "/continents/asia/flags/india.png"
+        }
+      ]
+    },
+    {
+      "id": "africa",
+      "name": "África",
+      "slide": "/continents-slides/africa.png",
+      "altSlide": "imagem do continente Africano",
+      "bannerUrl": "/continents/africa/banner.png",
+      "description": "Berço da humanidade, com diversidade cultural e paisagens impressionantes",
+      "paragraph": "A África é um continente de beleza selvagem e rica cultura. De safáris emocionantes a praias paradisíacas, há uma incrível diversidade de paisagens para explorar. Descubra a história fascinante das antigas civilizações egípcias, mergulhe na vibrante cultura local e maravilhe-se com a abundante vida selvagem. A África é uma jornada única e memorável para os turistas.",
+      "countries": 54,
+      "languages": 5,
+      "cities": [
+        {
+          "id": 1,
+          "imageUrl": "/continents/africa/cities/cairo.png",
+          "name": "Cairo",
+          "country": "Egito",
+          "flag": "/continents/africa/flags/egito.png"
+        },
+        {
+          "id": 2,
+          "imageUrl": "/continents/africa/cities/marrakech.png",
+          "name": "Marrakech",
+          "country": "Marrocos",
+          "flag": "/continents/africa/flags/marrocos.png"
+        },
+        {
+          "id": 3,
+          "imageUrl": "/continents/africa/cities/cidade-do-cabo.png",
+          "name": "Cidade do Cabo",
+          "country": "África do Sul",
+          "flag": "/continents/africa/flags/africa-do-sul.png"
+        },
+        {
+          "id": 3,
+          "imageUrl": "/continents/africa/cities/joanesburgo.png",
+          "name": "Joanesburgo",
+          "country": "África do Sul",
+          "flag": "/continents/africa/flags/africa-do-sul.png"
+        }
+      ]
+    },
+    {
+      "id": "europa",
+      "name": "Europa",
+      "slide": "/continents-slides/europa.png",
+      "altSlide": "imagem do continente Europeu",
+      "bannerUrl": "/continents/europe/banner.png",
+      "description": "O continente mais antigo",
+      "paragraph": "A europa é, por convenção , um dos seis continentes do mundo. Compreendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "countries": 44,
+      "languages": 10,
+      "cities": [
+        {
+          "id": 1,
+          "imageUrl": "/continents/europe/cities/londres.png",
+          "name": "Londres",
+          "country": "Reino Unido",
+          "flag": "/continents/europe/flags/reino-unido.png"
+        },
+        {
+          "id": 2,
+          "imageUrl": "/continents/europe/cities/paris.png",
+          "name": "Paris",
+          "country": "França",
+          "flag": "/continents/europe/flags/franca.png"
+        },
+        {
+          "id": 3,
+          "imageUrl": "/continents/europe/cities/roma.png",
+          "name": "Roma",
+          "country": "Itália",
+          "flag": "/continents/europe/flags/italia.png"
+        },
+        {
+          "id": 4,
+          "imageUrl": "/continents/europe/cities/praga.png",
+          "name": "Praga",
+          "country": "República Tcheca",
+          "flag": "/continents/europe/flags/republica-tcheca.png"
+        },
+        {
+          "id": 5,
+          "imageUrl": "/continents/europe/cities/amsterda.png",
+          "name": "Amsterdã",
+          "country": "Holanda",
+          "flag": "/continents/europe/flags/holanda.png"
+        }
+      ]
+    },
+    {
+      "id": "oceania",
+      "name": "Oceania",
+      "slide": "/continents-slides/oceania.png",
+      "altSlide": "imagem do continente Oceania",
+      "bannerUrl": "/continents/oceania/banner.png",
+      "description": "Ilhas paradisíacas, praias de areia branca e vida selvagem única",
+      "paragraph": "A Oceania é um continente que encanta com sua beleza natural intocada e ilhas paradisíacas. Com praias de areias brancas, recifes de coral coloridos e florestas tropicais exuberantes, é um destino perfeito para os amantes da natureza e do mar. A cultura diversificada das ilhas do Pacífico, como Fiji, Polinésia e Austrália, oferece uma mistura fascinante de tradições ancestrais e influências contemporâneas. Explore as maravilhas subaquáticas, participe de rituais culturais e desfrute da hospitalidade calorosa da Oceania.",
+      "countries": 14,
+      "languages": 13,
+      "cities": [
+        {
+          "id": 1,
+          "imageUrl": "/continents/oceania/cities/sidney.png",
+          "name": "Sidney",
+          "country": "Austrália",
+          "flag": "/continents/oceania/flags/australia.png"
+        },
+        {
+          "id": 2,
+          "imageUrl": "/continents/oceania/cities/melbourne.png",
+          "name": "Melbourne",
+          "country": "Austrália",
+          "flag": "/continents/oceania/flags/australia.png"
+        },
+        {
+          "id": 3,
+          "imageUrl": "/continents/oceania/cities/auckland.png",
+          "name": "Auckland",
+          "country": "Nova Zelândia",
+          "flag": "/continents/oceania/flags/nova-zelandia.png"
+        },
+        {
+          "id": "4",
+          "imageUrl": "/continents/oceania/cities/havai.png",
+          "name": "Havaí",
+          "country": "Estados Unidos",
+          "flag": "/continents/america-do-norte/flags/usa.png"
+        }
+      ]
+    }
+  ]
+}
