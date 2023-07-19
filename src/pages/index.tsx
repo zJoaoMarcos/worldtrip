@@ -5,8 +5,41 @@ import { Banner } from "@/components/Banner";
 import { ContinentsSlides } from "@/components/ContinentsSlides";
 import { Header } from "@/components/Header";
 import { TravelTypesSection } from "@/components/TravelTypesSection";
+import { api } from "@/services/axios/api";
+import { useEffect, useState } from "react";
+import Continent from "./continent/[slug]";
+
+interface Continent {
+  id: string;
+  slide: string;
+  altSlide: string;
+  name: string;
+  description: string;
+}
 
 export default function Home() {
+  const [continents, setContinents] = useState<Continent[]>([]);
+
+  useEffect(() => {
+    async function getContinents() {
+      const response = await api.get<Continent[]>("/continents");
+
+      const continents = response.data.map((continent) => {
+        return {
+          id: continent.id,
+          name: continent.name,
+          description: continent.description,
+          slide: continent.slide,
+          altSlide: continent.altSlide,
+        };
+      });
+
+      setContinents(continents);
+    }
+
+    getContinents();
+  }, []);
+
   return (
     <>
       <Head>
@@ -42,7 +75,7 @@ export default function Home() {
           Então escolha seu continente
         </Text>
 
-        <ContinentsSlides />
+        <ContinentsSlides continents={continents} />
       </Flex>
     </>
   );

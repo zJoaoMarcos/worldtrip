@@ -1,9 +1,9 @@
 import {
   Card,
   CardBody,
-  CardHeader,
   Flex,
   Image,
+  Spinner,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -20,13 +20,15 @@ interface CityCardProps {
 export function CityCard({ city }: CityCardProps) {
   return (
     <Card w="256px" h="279px" display="flex" flexDir="column">
-      <CardHeader
-        bgImage={`url(${city.imageUrl})`}
-        backgroundPosition="center"
-        backgroundRepeat="no-repeat"
+      <Image
         w="full"
-        h="173px"
-        bgSize="contain"
+        h="10.625rem"
+        alt={`imagem da cidade ${city.name}`}
+        src={city.imageUrl}
+        objectFit="fill"
+        objectPosition="center"
+        borderTopRadius="md"
+        fallback={<Spinner mx="auto" my="2rem" mb="7rem" />}
       />
 
       <CardBody
@@ -34,7 +36,6 @@ export function CityCard({ city }: CityCardProps) {
         border="1px"
         borderTop="none"
         borderColor="yellow.200"
-        borderBottomRadius="md"
       >
         <Flex
           w="full"
@@ -57,6 +58,7 @@ export function CityCard({ city }: CityCardProps) {
             boxSize="30px"
             src={city.flag}
             rounded="full"
+            shadow="md"
           />
         </Flex>
       </CardBody>

@@ -1,11 +1,20 @@
 import { Flex } from "@chakra-ui/react";
 
-import { continents } from "@/utils/continents";
 import { SwiperSlide } from "swiper/react";
 import { Slider } from "./Slider";
 import { SliderContent } from "./SliderContent";
 
-export function ContinentsSlides() {
+interface ContinentsSlidesProps {
+  continents: {
+    id: string;
+    slide: string;
+    altSlide: string;
+    name: string;
+    description: string;
+  }[];
+}
+
+export function ContinentsSlides({ continents }: ContinentsSlidesProps) {
   return (
     <Flex
       w="100%"
@@ -17,7 +26,7 @@ export function ContinentsSlides() {
       mb={{ base: "1.5rem", md: "2.5rem" }}
     >
       <Slider>
-        {continents.map((continent) => {
+        {continents?.map((continent) => {
           return (
             <SwiperSlide key={continent.id}>
               <SliderContent continent={continent} />

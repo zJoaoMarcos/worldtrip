@@ -1,11 +1,18 @@
-import { Box, Flex, HStack, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Text, Tooltip } from "@chakra-ui/react";
+import { RiInformationLine } from "react-icons/ri";
 
 interface ContinentDescriptionProps {
-  description: string;
+  paragraph: string;
+  countries: number;
+  languages: number;
+  citiesPlusHundred: number;
 }
 
 export function ContinentDescription({
-  description,
+  paragraph,
+  countries,
+  languages,
+  citiesPlusHundred,
 }: ContinentDescriptionProps) {
   return (
     <Flex
@@ -20,7 +27,7 @@ export function ContinentDescription({
     >
       <Box w="full" maxW="37.5rem">
         <Text textAlign="justify" fontSize="0.875rem">
-          {description}
+          {paragraph}
         </Text>
       </Box>
 
@@ -31,9 +38,9 @@ export function ContinentDescription({
         spacing="2.625rem"
         mr={{ base: "0", lg: "10" }}
       >
-        <Highlight amount={50} data="países" />
-        <Highlight amount={60} data="linguas" />
-        <Highlight amount={27} data="cidades +100" />
+        <Highlight amount={countries} data="países" />
+        <Highlight amount={languages} data="linguas" />
+        <Highlight amount={citiesPlusHundred} data="cidades +100" hasToolTip />
       </HStack>
     </Flex>
   );
@@ -42,9 +49,10 @@ export function ContinentDescription({
 interface HighlightProps {
   amount: number;
   data: string;
+  hasToolTip?: boolean;
 }
 
-function Highlight({ amount, data }: HighlightProps) {
+function Highlight({ amount, data, hasToolTip = false }: HighlightProps) {
   return (
     <Box
       display="flex"
@@ -58,13 +66,28 @@ function Highlight({ amount, data }: HighlightProps) {
       >
         {amount}
       </Text>
-      <Text
-        fontSize={{ base: "1rem", md: "2xl" }}
-        color="gray.700"
-        fontWeight={{ base: "normal", md: "semibold" }}
-      >
-        {data}
-      </Text>
+      <HStack>
+        <Text
+          fontSize={{ base: "1rem", md: "2xl" }}
+          color="gray.700"
+          fontWeight={{ base: "normal", md: "semibold" }}
+        >
+          {data}
+        </Text>
+        {hasToolTip && (
+          <Tooltip
+            hasArrow
+            bgColor="gray.400"
+            fontSize="sm"
+            label="As cidades +100 são as cidades que aquele continente possui que estão entre as 100 cidades mais visitadas do mundo."
+            aria-label="As cidades +100 são as cidades que aquele continente possui que estão entre as 100 cidades mais visitadas do mundo."
+          >
+            <span>
+              <RiInformationLine />
+            </span>
+          </Tooltip>
+        )}
+      </HStack>
     </Box>
   );
 }
